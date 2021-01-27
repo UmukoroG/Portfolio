@@ -1,6 +1,5 @@
 const express=require('express');
 const app=express();
-const port=process.env.port || 3000;
 const fs =require('fs')
 const nodemailer=require('nodemailer')
 const bodyParser = require('body-parser')
@@ -92,7 +91,7 @@ app.get('/research', function (req, res) {
 });
 
 
-app.post('/send',(req,res)=>{
+app.post('/send',async(req,res)=>{
     const output=`
     <p>You hav a new contact request</p>
     <h3>Contact Details </h3>
@@ -137,7 +136,7 @@ app.post('/send',(req,res)=>{
 })
 
 
-
+const port = process.env.PORT || 3000;
 app.listen(port, (req,res) =>{
     console.log(`Serving on port ${port}`)
 })
