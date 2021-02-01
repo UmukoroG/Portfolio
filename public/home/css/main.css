@@ -2215,29 +2215,29 @@ ul li{
 }
 
 #linkedin:hover{
-	font-size: 17px;
+	font-size: 15px;
 	color: royalblue;
 
 }
 
 #hackerrank:hover{
-	font-size: 17px;
+	font-size: 15px;
 	color: green;
 }
 
 #github:hover{
-	font-size: 17px;
+	font-size: 15px;
 	color: silver;
 }
 
 #kaggle:hover{
-	font-size: 17px;
+	font-size: 15px;
 	color:cyan;
 
 }
 
 #leetcode:hover{
-	font-size: 17px;
+	font-size: 15px;
 	color:goldenrod;
 
 }
