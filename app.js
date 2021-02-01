@@ -51,11 +51,34 @@ const connectSrcUrls = [
     "https://events.mapbox.com",
 ];
 
+
+const fontSrcUrls = [];
 app.use(
-    helmet({
-      contentSecurityPolicy: false,
+    helmet.contentSecurityPolicy({
+        directives: {
+            defaultSrc: [],
+            connectSrc: ["'self'", ...connectSrcUrls],
+            scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
+            styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
+            workerSrc: ["'self'", "blob:"],
+            childSrc: ["blob:"],
+            objectSrc: [],
+            imgSrc: [
+                "'self'",
+                "blob:",
+                "data:", 
+                "https://images.unsplash.com",
+            ],
+            fontSrc: ["'self'", ...fontSrcUrls],
+        },
     })
-  );
+);
+
+// app.use(
+//     helmet({
+//       contentSecurityPolicy: flase,
+//     })
+//   );
 
 
 app.get('/',(req,res)=>{
