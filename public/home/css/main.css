@@ -2189,8 +2189,11 @@ input, select, textarea {
 			}
 
 		}
+
+
+
 .portfolioBar{
-	word-spacing: 10px;
+	word-spacing: 3px;
 }
 
 .navHead{
@@ -2199,34 +2202,42 @@ input, select, textarea {
 	text-decoration: moccasin;
 }
 
+.navHeader{
+	background-color:darkslategray;
+	color: white;	
+	text-decoration: moccasin;
+	font-size:15px;
+
+}
+
 ul li{
 	list-style: none;
 }
 
 #linkedin:hover{
-	font-size: 20px;
+	font-size: 17px;
 	color: royalblue;
 
 }
 
 #hackerrank:hover{
-	font-size: 20px;
+	font-size: 17px;
 	color: green;
 }
 
 #github:hover{
-	font-size: 20px;
+	font-size: 17px;
 	color: silver;
 }
 
 #kaggle:hover{
-	font-size: 20px;
+	font-size: 17px;
 	color:cyan;
 
 }
 
 #leetcode:hover{
-	font-size: 20px;
+	font-size: 17px;
 	color:goldenrod;
 
 }
