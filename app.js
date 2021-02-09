@@ -74,12 +74,6 @@ app.use(
     })
 );
 
-// app.use(
-//     helmet({
-//       contentSecurityPolicy: flase,
-//     })
-//   );
-
 
 app.get('/',(req,res)=>{
   
