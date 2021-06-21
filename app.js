@@ -88,7 +88,7 @@ app.get('/portfolio',(req,res)=>{
 })
 
 app.get('/resume', function (req, res) {
-    var filePath = "/files/GODBLESSUMUKORO.pdf";
+    var filePath = "/files/GODBLESS_UMUKORO.pdf";
 
     fs.readFile(__dirname + filePath , function (err,data){
         res.contentType("application/pdf");
