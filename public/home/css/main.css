@@ -2220,10 +2220,10 @@ ul li{
 
 }
 
-/* #hackerrank:hover{
+#hackerrank:hover{
 	font-size: 15px;
-	color: green;
-} */
+	color: goldenrod;
+}
 
 #github:hover{
 	font-size: 15px;
@@ -2236,8 +2236,8 @@ ul li{
 
 }
 
-#leetcode:hover{
+/* #leetcode:hover{
 	font-size: 15px;
 	color:goldenrod;
 
-}
+} */
